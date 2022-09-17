@@ -409,7 +409,7 @@ void handle_sdl_events(config_params_s *conf) {
     }
 
     // ALT+Q quits program
-    if (event.key.keysym.sym == SDL_SCANCODE_Q &&
+    if (event.key.keysym.sym == SDLK_Q &&
         (event.key.keysym.mod & KMOD_ALT) > 0) {
       key = (input_msg_s){special, msg_quit};
       break;
