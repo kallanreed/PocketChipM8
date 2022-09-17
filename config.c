@@ -32,14 +32,14 @@ config_params_s init_config() {
   c.key_left = SDL_SCANCODE_LEFT;
   c.key_down = SDL_SCANCODE_DOWN;
   c.key_right = SDL_SCANCODE_RIGHT;
-  c.key_select = SDL_SCANCODE_L;
-  c.key_select_alt = SDL_SCANCODE_A;
+  c.key_select = SDL_SCANCODE_0;
+  c.key_select_alt = SDL_SCANCODE_1;
   c.key_start = SDL_SCANCODE_SPACE;
   c.key_start_alt = SDL_SCANCODE_S;
-  c.key_opt = SDL_SCANCODE_P;
-  c.key_opt_alt = SDL_SCANCODE_Q;
-  c.key_edit = SDL_SCANCODE_O;
-  c.key_edit_alt = SDL_SCANCODE_W;
+  c.key_opt = SDL_SCANCODE_KP_MINUS;
+  c.key_opt_alt = SDL_SCANCODE_2;
+  c.key_edit = SDL_SCANCODE_9;
+  c.key_edit_alt = SDL_SCANCODE_E;
   c.key_delete = SDL_SCANCODE_DELETE;
   c.key_reset = SDL_SCANCODE_R;
 
