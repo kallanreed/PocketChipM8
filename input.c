@@ -408,8 +408,8 @@ void handle_sdl_events(config_params_s *conf) {
       break;
     }
 
-    // ALT+F4 quits program
-    if (event.key.keysym.sym == SDLK_F4 &&
+    // ALT+Q quits program
+    if (event.key.keysym.sym == SDL_SCANCODE_Q &&
         (event.key.keysym.mod & KMOD_ALT) > 0) {
       key = (input_msg_s){special, msg_quit};
       break;

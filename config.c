@@ -22,8 +22,8 @@ config_params_s init_config() {
 
   c.filename = "config.ini"; // default config file to load
 
-  c.init_fullscreen = 0; // default fullscreen state at load
-  c.init_use_gpu = 1;    // default to use hardware acceleration
+  c.init_fullscreen = 1; // default fullscreen state at load
+  c.init_use_gpu = 0;    // default to use hardware acceleration
   c.idle_ms = 10;        // default to high performance
   c.wait_for_device = 0; // default to exit if device disconnected
   c.wait_packets = 1024;   // default zero-byte attempts to disconnect (about 2 sec for default idle_ms)
@@ -32,14 +32,14 @@ config_params_s init_config() {
   c.key_left = SDL_SCANCODE_LEFT;
   c.key_down = SDL_SCANCODE_DOWN;
   c.key_right = SDL_SCANCODE_RIGHT;
-  c.key_select = SDL_SCANCODE_LSHIFT;
+  c.key_select = SDL_SCANCODE_L;
   c.key_select_alt = SDL_SCANCODE_A;
   c.key_start = SDL_SCANCODE_SPACE;
   c.key_start_alt = SDL_SCANCODE_S;
-  c.key_opt = SDL_SCANCODE_LALT;
-  c.key_opt_alt = SDL_SCANCODE_Z;
-  c.key_edit = SDL_SCANCODE_LCTRL;
-  c.key_edit_alt = SDL_SCANCODE_X;
+  c.key_opt = SDL_SCANCODE_P;
+  c.key_opt_alt = SDL_SCANCODE_Q;
+  c.key_edit = SDL_SCANCODE_O;
+  c.key_edit_alt = SDL_SCANCODE_W;
   c.key_delete = SDL_SCANCODE_DELETE;
   c.key_reset = SDL_SCANCODE_R;
 
