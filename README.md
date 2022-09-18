@@ -50,6 +50,14 @@ TODO: detailed instruction.
 * Pulse Audio gets angry a lot. `killall pulseaudio` or `pulseaudio -k` is your friend to get back into a good state.
 * By default PA will suspend idle devices. This is really annoying in this case. edit /etc/pulse/default.pa and comment out the line where the `load-module module-suspend-on-idle` line.
 * By default, the sound devices are all muted? Use `alsamixer` then F6 to select the Chip's audio device. Unmute the Power Amp devices.
+  * There a all kinds of devices under the sun4i sound card. Some only can be muted/unmuted by pressing 'M'.
+  * If your sound is really quiet, mute the "Power Amp DAC" device.
+  * I've found the best volume comes when the following are all unmuted.
+    * Left Mixer Left DAC
+    * Power Amplifier Mixer
+    * Power Amplifier Mute (yeah... I don't understand that name either.)
+    * Right Mixer Left DAC
+    * Right Mixer Right DAC 
 
 ----------------------------------------------------------------------------
 
